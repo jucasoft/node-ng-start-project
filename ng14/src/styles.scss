@@ -1,1 +1,20 @@
-/* You can add global styles to this file, and also import other style files */
+@import 'app/core/theme/css/_variables';
+
+body {
+  word-wrap: break-word;
+  font-size: 12px;
+  font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
+  margin: 0 !important;
+}
+
+.icon-button:hover {
+  opacity: 0.5;
+  transition: transform 0.2s;
+  cursor: pointer;
+}
+
+.icon-button {
+  transition: transform 0.2s;
+  font-size: 1.25rem;
+  margin: 0 0.5em;
+}
