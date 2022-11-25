@@ -74,6 +74,7 @@ export class MenuItemComponent implements OnInit {
     this.routerLinkActive$ = this.store$
       .select(RouterStoreSelectors.selectUrl)
       .pipe(
+        map((selectUrl: string) => selectUrl || ''),
         map((selectUrl: string) => {
           return selectUrl.indexOf(this.item.url) !== -1;
         })
